@@ -1,0 +1,14 @@
+package com.zy.gray_demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+public class GrayDemoApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(GrayDemoApplication.class, args);
+    }
+
+}
